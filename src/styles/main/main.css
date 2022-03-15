@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 25px 0 0 0;
   background-color: #2c323b;
   color: #e4e3de;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .Coin {
@@ -25,31 +27,37 @@ body {
   color: #e4e3de;
 }
 
-.search-label {
-  text-align: center;
-}
-
 .search-text {
   margin-bottom: 32px;
   text-align: center;
 }
 
+svg {
+  width: 45px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
 .coin-input {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0 auto;
   padding-left: 16px;
-  width: 235px;
-  height: 50px;
+  width: 200px;
+  height: 45px;
   border-radius: 4px;
-  border: none;
+  border: 1px solid #2c323b;
+}
+
+h1 {
+  text-align: center;
 }
 
 .coin-row {
@@ -80,11 +88,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 24px;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .Coin h1 {
   font-size: 25px;
+  max-width: 150px;
 }
 
 .Coin img {
@@ -106,30 +115,34 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 150%;
+}
+
+.coin-ath {
+  width: 20%;
 }
 
 .coin-price {
-  width: 110px;
+  width: 20%;
 }
 
 .coin-volume {
-  width: 155px;
+  width: 20%;
 }
 
 .coin-marketcap {
-  width: 190px;
+  width: 20%;
 }
 
 .coin-percent {
-  width: 100px;
+  width: 20%;
 }
 
 .red {
-  color: #f00606;
+  color: #f00606 !important;
 }
 
 .green {
-  color: #11d811;
+  color: #11d811 !important;
 }
 /*# sourceMappingURL=main.css.map */

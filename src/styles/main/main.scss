@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 25px 0 0 0;
   background-color: rgb(44, 50, 59);
   color: rgb(228, 227, 222);
+  font-family: "Fira Sans", sans-serif;
 }
 
 .Coin {
@@ -15,25 +17,30 @@ body {
   color: rgb(228, 227, 222);
 }
 
-.search-label {
-  text-align: center;
-}
-
 .search-text {
   margin-bottom: 32px;
   text-align: center;
 }
 
+svg {
+  width: 45px;
+  margin-left: 25px;
+  cursor: pointer;
+}
 .coin-input {
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: end;
+  margin: 0 auto;
   padding-left: 16px;
-  width: 235px;
-  height: 50px;
+  width: 200px;
+  height: 45px;
   border-radius: 4px;
-  border: none;
+  border: 1px solid rgb(44, 50, 59);
+}
+
+h1 {
+  text-align: center;
 }
 
 .coin-row {
@@ -53,11 +60,12 @@ body {
   display: flex;
   align-items: center;
   padding-right: 24px;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .Coin h1 {
   font-size: 25px;
+  max-width: 150px;
 }
 
 .Coin img {
@@ -75,28 +83,32 @@ body {
   display: flex;
   text-align: right;
   justify-content: space-between;
-  width: 100%;
+  width: 150%;
+}
+
+.coin-ath {
+  width: 20%;
 }
 .coin-price {
-  width: 110px;
+  width: 20%;
 }
 
 .coin-volume {
-  width: 155px;
+  width: 20%;
 }
 
 .coin-marketcap {
-  width: 190px;
+  width: 20%;
 }
 
 .coin-percent {
-  width: 100px;
+  width: 20%;
 }
 
 .red {
-  color: #f00606;
+  color: #f00606 !important;
 }
 
 .green {
-  color: #11d811;
+  color: #11d811 !important;
 }
