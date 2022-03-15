@@ -6,18 +6,21 @@ export default function Coin({
   volume,
   priceChange,
   marketcap,
+  marketcapRank,
 }) {
   return (
     <div className="Coin">
       <div className="coin-row">
         <div className="coin-display">
+          <p className="mcap-rank">{marketcapRank}</p>
           <img className="coin-pic" alt="coin-pic" src={image} />
           <h1>{name}</h1>
+
           <p className="coin-symbol">{symbol}</p>
         </div>
         <div className="coin-data">
           <p className="coin-price">${price}</p>
-          <p className="coin-volume">Vol: {volume.toLocaleString()}</p>
+          <p className="coin-volume">Total Volume: {volume.toLocaleString()}</p>
           {priceChange < 0 ? (
             <p className="coin-percentage red">{priceChange.toFixed(2)}%</p>
           ) : (

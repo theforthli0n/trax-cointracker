@@ -10,7 +10,7 @@ export default function Tracker() {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
       )
       .then((res) => {
         setCoins(res.data);
@@ -31,7 +31,7 @@ export default function Tracker() {
   return (
     <div className="Tracker">
       <div className="search-coin">
-        <label className="search-label">Search a currency</label>
+        <h1 className="search-label">Search a currency</h1>
         <input
           type="text"
           placeholder="Search"
@@ -50,6 +50,7 @@ export default function Tracker() {
             price={coin.current_price}
             priceChange={coin.price_change_percentage_24h}
             marketcap={coin.market_cap}
+            marketcapRank={coin.market_cap_rank}
           />
         );
       })}
