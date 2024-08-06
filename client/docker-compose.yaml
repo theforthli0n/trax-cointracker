@@ -1,0 +1,12 @@
+services:
+  trax-cointracker:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: trax-cointracker
+    ports:
+      - "4026:4026"
+    environment:
+      - PORT=4026
+    volumes:
+      - ./:/trax-cointracker
